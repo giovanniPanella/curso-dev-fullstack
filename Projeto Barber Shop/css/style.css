@@ -28,7 +28,7 @@ body{
     background-size: cover;
     background-image: url(../img/bg-home.jpg);
     height: 100vh; /*View port height deixa na tela com percentual*/
-
+    background-attachment: fixed;
 }
 .home .header{
     padding: 30px 0;
@@ -310,4 +310,122 @@ margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
 
+}
+
+
+.appointment button:hover{
+    background-color: var(--coler-tertiary);
+    
+
+}
+
+
+/****************
+* Galery
+****************/
+
+
+.gallery{
+   
+    padding: 100px 0;
+    background-color: var(--color-primary-light);
+}
+.gallery h2{
+    color: var(--coler-tertiary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.gallery .img{
+    margin: 0px auto;
+    display: block;
+}
+
+.gallery .photos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 100vh;
+    margin: 50px auto;
+ 
+}
+.gallery .photos div{
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+.gallery .photos div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/****************
+* Location
+****************/
+.location{
+   
+    padding: 100px 0;
+    background: url(../img/bg-location.jpg);
+    background-size: cover;
+}
+.location .head{
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.location .head .info{
+    display: flex;
+    align-items: center;
+
+}
+
+.location .head .info .icon{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 100% ;
+    margin-right: 15px;
+} 
+
+.location .head .info .text span{
+    display: block;
+    font-size: 13px;
+}
+.location .head .info .text span:first-child{
+    color:silver;
+}
+.location .head .info .text span:last-child{
+    color: white;
+
+}
+.locatio .map{
+    width: 100%;
+}
+.location .map iframe{
+    width: 100%;
+}
+
+
+
+/****************
+* Footer
+****************/
+
+.footer{
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
 }
