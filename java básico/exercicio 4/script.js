@@ -1,13 +1,14 @@
 function entrar() {
     let inputNome = prompt('Digite o seu Nome:')
-    inputNome.toUpperCase()
+    inputNome= inputNome.toUpperCase()
+   
     let inputIdade = prompt('Digite o sua Idade:')
     let idade = parseInt(inputIdade) 
     let maiorOuMenor
     
 
     if ((inputNome ==='')||(inputIdade==='')) {
-        alert('OPA FALOTU ALGO AI TENTE DENOVO')
+        alert('OPA FALTOU ALGO AI, TENTE DENOVO!!')
     }
     else{
         
